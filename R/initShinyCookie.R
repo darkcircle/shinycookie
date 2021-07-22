@@ -23,11 +23,11 @@ initShinyCookie <- function(id, timeout = 500) {
       version = packageVersion("shinycookie"),
       src = "www",
       package = "shinycookie",
-      script = c("js.cookie.js","shinyCookie.js")
+      script = c("js.cookie.js", "shinyCookie.js")
     ),
     HTML(
       paste0(
-        "<script type=\"text/javascript\">shinycookie.init(",
+        "<script type=\"text/javascript\">shinyCookie.init(",
         timeout,
         ")</script>")
       ),
